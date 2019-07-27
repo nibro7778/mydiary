@@ -1,2 +1,2 @@
 # mydirectory
-Microservice to manage your personal directory
+Microservices architecture and container based application 
