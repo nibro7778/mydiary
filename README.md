@@ -17,7 +17,7 @@ The architecture proposes a microservice oriented architecture implementation wi
 <img src="doc-design/architecturedesign.PNG">
 <p>
 
-## Internal architecture and desing of the microservies
+## Internal architecture 
 
 ### Contact service
 
@@ -32,7 +32,7 @@ Note taking service. you can note whatever's in your mind just for your future r
 
 Manging your events like small meetups with date time. you can connect your event service with contact and note service.
 
-## Following are technology stack used in My Dairy application 
+## Following are technology stack used in My Diary application 
 
 - .NET Core 2.2
 - Docker
