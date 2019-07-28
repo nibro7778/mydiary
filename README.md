@@ -1,4 +1,5 @@
-# My Dairy
+# My Diary - Microservices Architecture and container based appliation
+
 Sample microservice and container based application, accessed via API Gateway (ocelot). Currently we are using .NET Core 2.2, Docker engine, Azure/AWS for hosting micro services, kubernetes. My dairy application is design to exploring "wave" of technologies like EF Core, ASP.NET Core.
 
 ## Architecture overview
@@ -20,8 +21,6 @@ Note taking service. you can note whatever's in your mind just for your future r
 ### Event service 
 
 Manging your events like small meetups with date time. you can connect your event service with contact and note service.
-
-
 
 ## Following are technology stack used in My Dairy application 
 
