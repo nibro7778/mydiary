@@ -6,13 +6,23 @@ Sample microservice and container based application, accessed via API Gateway (o
 
 The architecture proposes a microservice oriented architecture implementation with multiple autonomous microservices which means each owning its own data/db and implementing using simple data driven desing and Domain driven desing using CQRS partten using http as communication protocol and asynchronous communication using event bus (RebbitMQ)
 
-- Contact service
-- Note service
-- Event service
+- API Gateway 
+- Identity Server
+- Internal Services
+  - Contact service
+  - Note service
+  - Event service
+
+<p>
+<img src="doc-design/architecturedesign.PNG">
+<p>
+
+## Internal architecture and desing of the microservies
 
 ### Contact service
 
-This micro service contains set of APIs which are used for managing contacts. Contact details are address, email, phone number etc. 
+This micro service contains set of APIs which are used for managing personal contacts. Contact details are address, email, phone number etc. 
+Contact service uses Domain Driven Desing using CQRS pattern. We have used SQL Server database
 
 ### Note services
 
