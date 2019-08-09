@@ -43,4 +43,3 @@ Manging your events like small meetups with date time. you can connect your even
 - RabbitMQ (Public/Subscribe)
 
 
-
