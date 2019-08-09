@@ -1,0 +1,2 @@
+PR_TITLE_REGEX: (?<verbs>(fix:|feat:|docs:|style:|refactor:|test:|chore:)\s)(?<jira>[A-Z]{3}-\d*3-)(?<message>)
+COMMIT_MESSAGE_REGEX: (?<verbs>(fix:|feat:|docs:|style:|refactor:|test:|chore:)\s)(?<jira>[A-Z]{3}-\d*3-)(?<message>)
