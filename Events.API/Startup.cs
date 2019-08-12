@@ -29,9 +29,10 @@ namespace Events.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.EnableVersionedApi();
 
-            // Health Check 
+            services.EnableVersionedApi();
+            services.EnableHealthCheck(_configuration);
+           
             // Swagger
         }
 
@@ -39,23 +40,13 @@ namespace Events.API
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-            }
             else
-            {
                 app.UseHsts();
-            }
 
             app.UseHttpsRedirection();
-            app.UseApiVersioning();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "Default",
-                    template: "{controller=PingMe}/{action=Index}/{Id?}");
-            });
+            app.UseMvcWithDefaultRoute();
+            app.UseCustomHealthCheck();
         }
     }
 }

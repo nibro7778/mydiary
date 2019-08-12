@@ -32,8 +32,8 @@ namespace Notes.API
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
             services.EnableVersionedApi();
-
-            // Health Check 
+            services.EnableHealthCheck(_configuration);
+            
             // Swagger
         }
 
@@ -41,21 +41,13 @@ namespace Notes.API
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-            }
             else
-            {
                 app.UseHsts();
-            }
 
             app.UseHttpsRedirection();
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "Default",
-                    template: "{controller=PingMe}/{action=Index}/{Id?}");
-            });
+            app.UseMvcWithDefaultRoute();
+            app.UseCustomHealthCheck();
         }
     }
 }
