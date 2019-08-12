@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MyDiary.API;
 
 namespace Notes.API
 {
@@ -27,10 +28,10 @@ namespace Notes.API
         // ConfigureServices method to configure the app's services. Services are configured—also described as registered
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(options => { options.EnableEndpointRouting = false; })
+                .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddApiVersioning();
+            services.EnableVersionedApi();
 
             // Health Check 
             // Swagger
@@ -49,8 +50,6 @@ namespace Notes.API
             }
 
             app.UseHttpsRedirection();
-            app.UseApiVersioning();
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

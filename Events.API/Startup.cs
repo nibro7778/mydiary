@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MyDiary.API;
 
 namespace Events.API
 {
@@ -28,7 +29,7 @@ namespace Events.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddApiVersioning();
+            services.EnableVersionedApi();
 
             // Health Check 
             // Swagger

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using MyDiary.API;
 
 namespace Contacts.API
 {
@@ -30,7 +31,7 @@ namespace Contacts.API
             services.AddMvc(options => { options.EnableEndpointRouting = false; })
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
-            services.AddApiVersioning();
+            services.EnableVersionedApi();
 
             // Health Check 
             // Swagger
@@ -50,14 +51,7 @@ namespace Contacts.API
             }
 
             app.UseHttpsRedirection();
-            app.UseApiVersioning();
-
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "Default",
-                    template: "{controller=PingMe}/{action=Index}/{Id?}");
-            });
+            app.UseMvcWithDefaultRoute();
         }
     }
 }
