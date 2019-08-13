@@ -1,6 +1,6 @@
 # MyDiary - Microservices Architecture and container based appliation
 
-Sample microservice and container based application, accessed via API Gateway (ocelot). Currently we are using .NET Core 2.2, Docker engine, Azure/AWS for hosting micro services, kubernetes. My dairy application is design to exploring "wave" of technologies like EF Core, ASP.NET Core.
+Sample microservice and container based application, accessed via API Gateway (ocelot). Currently we are planning to use .NET Core 2.2, Docker engine, Azure/AWS for hosting micro services, kubernetes. The goal of this project is implement the most common used technologies and share with technical community the best way to develop great application with .NET
 
 ## Project Status
 
