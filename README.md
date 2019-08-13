@@ -17,20 +17,7 @@ The architecture proposes a microservice oriented architecture implementation wi
 <img src="doc-design/architecturedesign.PNG">
 <p>
 
-## Internal architecture 
-
-### Contact service
-
-This micro service contains set of APIs which are used for managing personal contacts. Contact details are address, email, phone number etc. 
-Contact service uses Domain Driven Desing using CQRS pattern. We have used SQL Server database
-
-### Note services
-
-Note taking service. you can note whatever's in your mind just for your future reference. you can connect each note with your contact and event
-
-### Event service 
-
-Manging your events like small meetups with date time. you can connect your event service with contact and note service.
+visit <a href="https://github.com/nibro7778/mydiary/wiki/Architecture">wiki</a> page for more detail about architecture of application
 
 ## Following are technology stack used in My Diary application 
 
