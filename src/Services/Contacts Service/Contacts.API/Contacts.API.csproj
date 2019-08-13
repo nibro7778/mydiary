@@ -1,9 +1,9 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
-    <UserSecretsId>c01f4ecb-75d0-4a8d-8e05-0e7284b5c44d</UserSecretsId>
+    <UserSecretsId>3b18fe86-b38c-4368-a7e8-0b8ef165b878</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
@@ -15,11 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Notes\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\MyDiary.API\MyDiary.API.csproj" />
+    <ProjectReference Include="..\..\..\Common\MyDiary.API\MyDiary.API.csproj" />
   </ItemGroup>
 
 </Project>
