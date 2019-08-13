@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyDiary.API\MyDiary.API.csproj" />
+    <ProjectReference Include="..\..\..\Common\MyDiary.API\MyDiary.API.csproj" />
   </ItemGroup>
 
 </Project>
