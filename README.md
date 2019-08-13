@@ -14,10 +14,10 @@ The architecture proposes a microservice oriented architecture implementation wi
   - Event service
 
 <p>
-<img src="doc-design/architecturedesign.PNG">
+<img src="doc/architecturedesign.PNG">
 <p>
 
-visit <a href="https://github.com/nibro7778/mydiary/wiki/Architecture">wiki</a> page for more detail about architecture of application
+Visit <a href="https://github.com/nibro7778/mydiary/wiki/Architecture">wiki</a> page for more detail about architecture of application
 
 ## Following are technology stack used in My Diary application 
 
