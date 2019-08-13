@@ -9,7 +9,7 @@ Sample microservice and container based application, accessed via API Gateway (o
 Project is currently in development phase. I am really happy to accept your idea which, together :couple::two_men_holding_hands: we can implement in this project and learn new technology together 🚀. Come and have a chat on gitter. 
 
 ## Give a Star! ⭐️
-If you liked the project or if this project helped you, please give a star ;)
+If you liked the project or if this project helped you, please give a star :wink:
 
 ## Architecture overview
 
@@ -26,7 +26,7 @@ The architecture proposes a microservice oriented architecture implementation wi
 <img src="doc/architecturedesign.PNG">
 <p>
 
-Visit <a href="https://github.com/nibro7778/mydiary/wiki/Architecture">wiki</a> page :newspaper: for more detail about architecture of application
+Visit <a href="https://github.com/nibro7778/mydiary/wiki">wiki</a> page :newspaper: for more detail about architecture of application
 
 ## Following are technology stack used in My Diary application 
 
