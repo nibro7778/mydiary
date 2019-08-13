@@ -10,6 +10,7 @@ namespace Notes.API
 {
     public class Startup
     {
+        private static string ServiceName => typeof(Startup).Assembly.GetName().Name;
         private readonly IConfiguration _configuration;
         public Startup(IHostingEnvironment env, ILoggerFactory loggerFactor)
         {
@@ -33,8 +34,7 @@ namespace Notes.API
 
             services.EnableVersionedApi();
             services.EnableHealthCheck(_configuration);
-            
-            // Swagger
+            services.EnableSwagger(ServiceName);
         }
 
         // Method to create the app's request processing pipeline.
