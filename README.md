@@ -37,6 +37,3 @@ Visit <a href="https://github.com/nibro7778/mydiary/wiki">wiki</a> page :newspap
 - Samplified CQRS & DDD
 - API gateway (ocelot)
 - RabbitMQ (Public/Subscribe)
-
-
-
