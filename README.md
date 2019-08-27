@@ -5,6 +5,8 @@ Sample microservice and container based application, accessed via API Gateway (o
 ## Project Status
 
 [![Gitter](https://badges.gitter.im/mydiary-app/community.svg)](https://gitter.im/mydiary-app/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![GithubActionWorkflow](https://github.com/actions/setup-dotnet/workflows/Main%20workflow/badge.svg)](https://github.com/nibro7778/mydiary/actions)
+
 
 Project is currently in development phase. I am really happy to accept your idea which, together :couple::two_men_holding_hands: we can implement in this project and learn new technology together 🚀. Come and have a chat on gitter. 
 
