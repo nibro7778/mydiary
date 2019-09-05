@@ -5,10 +5,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
 WORKDIR /src
-COPY ["Contacts.API/Contacts.API.csproj", "Contacts.API/"]
-RUN dotnet restore "Contacts.API/Contacts.API.csproj"
+COPY ["src/Services/Contacts Service/Contacts.API/Contacts.API.csproj", "src/Services/Contacts Service/Contacts.API/"]
+COPY ["src/Common/MyDiary.API/MyDiary.API.csproj", "src/Common/MyDiary.API/"]
+RUN dotnet restore "src/Services/Contacts Service/Contacts.API/Contacts.API.csproj"
 COPY . .
-WORKDIR "/src/Contacts.API"
+WORKDIR "/src/src/Services/Contacts Service/Contacts.API"
 RUN dotnet build "Contacts.API.csproj" -c Release -o /app
 
 FROM build AS publish

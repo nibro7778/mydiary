@@ -5,10 +5,11 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
 WORKDIR /src
-COPY ["Events.API/Events.API.csproj", "Events.API/"]
-RUN dotnet restore "Events.API/Events.API.csproj"
+COPY ["src/Services/Events Service/Events.API/Events.API.csproj", "src/Services/Events Service/Events.API/"]
+COPY ["src/Common/MyDiary.API/MyDiary.API.csproj", "src/Common/MyDiary.API/"]
+RUN dotnet restore "src/Services/Events Service/Events.API/Events.API.csproj"
 COPY . .
-WORKDIR "/src/Events.API"
+WORKDIR "/src/src/Services/Events Service/Events.API"
 RUN dotnet build "Events.API.csproj" -c Release -o /app
 
 FROM build AS publish
