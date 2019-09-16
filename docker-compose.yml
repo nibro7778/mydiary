@@ -11,7 +11,7 @@ services:
       - '5001:80'
 
   events.api:
-    image: nibro7778/contacts.api
+    image: nibro7778/events.api
     build:
       context: .
       dockerfile: src/Services/Events Service/Events.API/Dockerfile
@@ -19,7 +19,7 @@ services:
       - '5002:80'
 
   notes.api:
-    image: nibro7778/events.api
+    image: nibro7778/notes.api
     build:
       context: .
       dockerfile: src/Services/Notes Service/Notes.API/Dockerfile
