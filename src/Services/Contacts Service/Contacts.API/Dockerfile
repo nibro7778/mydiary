@@ -9,8 +9,11 @@ COPY ["src/Services/Contacts Service/Contacts.API/Contacts.API.csproj", "src/Ser
 COPY ["src/Common/MyDiary.API/MyDiary.API.csproj", "src/Common/MyDiary.API/"]
 RUN dotnet restore "src/Services/Contacts Service/Contacts.API/Contacts.API.csproj"
 COPY . .
-WORKDIR "/src/src/Services/Contacts Service/Contacts.API"
+WORKDIR /src/src/Services/Contacts Service/Contacts.API
 RUN dotnet build "Contacts.API.csproj" -c Release -o /app
+
+FROM build as unit
+WORKDIR /src/test/Services/Contacts Service/Contacts.API.Test
 
 FROM build AS publish
 RUN dotnet publish "Contacts.API.csproj" -c Release -o /app
