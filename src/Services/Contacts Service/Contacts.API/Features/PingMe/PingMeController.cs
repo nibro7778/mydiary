@@ -13,7 +13,7 @@ namespace Contacts.API.Features.PingMe
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<string> Get()
         {
-            return Ok("I am available"); 
+            return Ok("I am available");
         }
     }
 }
