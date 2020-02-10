@@ -6,12 +6,12 @@ namespace Contacts.API.Features.PingMe
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
-    public class PingMeController : ControllerBase
+    public class ContactPingMeController : ControllerBase
     {
         [HttpGet]
-        [Route("Get")]
+        [Route("Reply")]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        public ActionResult<string> Get()
+        public ActionResult<string> Reply()
         {
             return Ok("I am available");
         }

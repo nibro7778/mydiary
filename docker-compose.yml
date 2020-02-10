@@ -2,6 +2,14 @@ version: '3.7'
 
 services:
 
+  ocelot.apigateway:
+    image: nibro7778/ocelot.apigateway
+    build:
+      context: .
+      dockerfile: src/Gateway/Ocelot.ApiGateway/Dockerfile
+    ports:
+      - '5000:80'
+
   contacts.api:
     image: nibro7778/contacts.api
     build:

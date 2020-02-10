@@ -1,19 +1,19 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Events.API.Features.PingMe
+namespace Notes.API.Features.PingMe
 {
     [ApiVersion("1.0")]
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
-    public class PingMeController : ControllerBase
+    public class NotePingMeController : ControllerBase
     {
         [HttpGet]
         [Route("Get")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<string> Get()
         {
-            return Ok("I am available");
+            return Ok("I am available"); 
         }
     }
 }

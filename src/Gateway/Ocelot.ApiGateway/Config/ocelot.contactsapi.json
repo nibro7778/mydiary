@@ -1,0 +1,12 @@
+{
+  "DownstreamPathTemplate": "/api/v1/ContactPingMe/{everything}",
+  "DownstreamScheme": "http",
+  "DownstreamHostAndPorts": [
+    {
+      "Host": "localhost",
+      "Port": 5001
+    }
+  ],
+  "UpstreamPathTemplate": "/api/v1/ContactPingMe/{everything}",
+  "UpstreamHttpMethod": [ "Get" ]
+}
