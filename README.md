@@ -20,9 +20,9 @@ The architecture proposes a microservice oriented architecture implementation wi
 - API Gateway 
 - Identity Server
 - Internal Services
-  - Contact service
-  - Note service
-  - Event service
+  - [Contacts Service](https://github.com/nibro7778/mydiary-api-contacts)
+  - [Notes Service](https://github.com/nibro7778/mydiary-api-notes)
+  - [Event Service](https://github.com/nibro7778/mydiary-api-events)
 
 <p>
 <img src="doc/architecturedesign.PNG">
@@ -30,14 +30,17 @@ The architecture proposes a microservice oriented architecture implementation wi
 
 Visit <a href="https://github.com/nibro7778/mydiary/wiki">wiki</a> page :newspaper: for more detail about architecture of application
 
-## Following are technology stack used in My Diary application 
+## Implementation
 
-- .NET Core 2.2
-- Docker
-- EF Core
-- Identity Server (Authorization)
-- Samplified CQRS & DDD
-- API gateway (ocelot)
-- RabbitMQ (Public/Subscribe)
+### Services
 
+| Name        	| Code                                                         | Build                                   | Deploy                | PROD     | 
+|---------------|--------------------------------------------------------------|-----------------------------------------|-----------------------|----------|
+| Contacts		| [Code](https://github.com/nibro7778/mydiary-api-contacts)    | [Build](http://build.nirajtrivedi.com/) | [Deploy] | [PROD] |			|
+| Notes			| [Code](https://github.com/nibro7778/mydiary-api-notes)       | [Build](http://build.nirajtrivedi.com/) | [Deploy] | [PROD] |			|
+| Events		| [Code](https://github.com/nibro7778/mydiary-api-events)      | [Build](http://build.nirajtrivedi.com/) | [Deploy] | [PROD] |			|
+
+### Libraries
+
+- [Nibro.Framework.StartupExtension](https://github.com/nibro7778/mydiary-framework-startup)
 
